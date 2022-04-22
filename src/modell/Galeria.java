@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package modell;
 
-/**
- *
- * @author Illes.Lejla
- */
-public class Galeria {
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+public class Galeria implements Iterable<KiallitasiTargy>{
+    
+       private ArrayList<KiallitasiTargy> galeria;
+
+    public Galeria(){
+        galeria = new ArrayList<>();
+     
+        
+        }
+
+    @Override
+    public Iterator<KiallitasiTargy> iterator() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
     
 }
